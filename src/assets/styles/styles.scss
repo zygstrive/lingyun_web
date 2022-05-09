@@ -1,0 +1,273 @@
+.f-page{
+   
+  .el-row {
+    margin-bottom: 20px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+  }
+  .el-col {
+      border-radius: 4px;
+  }
+  .bg-purple-dark {
+      //background: #99a9bf;
+  }
+  .bg-purple {
+      //background: #d3dce6;
+      //border:1px solid red;
+  }
+  .bg-purple-light {
+      // background: #e5e9f2;
+  }
+  .grid-content {
+      border-radius: 4px;
+     // min-height: 136px;
+  }
+  .row-bg {
+      padding: 10px 0;
+      background-color: #f9fafc;
+  }
+  .relative{
+      position: relative;
+  }
+  .absolute{
+      position: absolute;
+   }
+  .flex{
+      display: flex;
+  }
+  .flex-row{
+      display: flex;
+      flex-direction: row;
+  }
+  .flex-column{
+      display: flex;
+      flex-direction: column;
+  }
+  .flex-between{
+    justify-content:space-around;
+  }
+  .flex-end{
+  
+    align-self: flex-end;
+  }
+  .falign-middle{
+    display:flex;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .calign-middle{
+    display:flex;
+    align-self: center;
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    -ms-align-self: center;
+  }
+  .boxc{
+    /* Internet Explorer 10 */
+      display:-ms-flexbox;
+      -ms-flex-pack:center;
+      -ms-flex-align:center;
+      /* Firefox */
+      display:-moz-box;
+      -moz-box-pack:center;
+      -moz-box-align:center;
+      /* Safari, Chrome, and Opera */
+      display:-webkit-box;
+      -webkit-box-pack:center;
+      -webkit-box-align:center;
+      /* W3C */
+      // display:box;
+      box-pack:center;
+      box-align:center;
+  }
+  .setw100{
+      width:100%
+    }
+
+  .item1 {
+      -webkit-flex:1;
+      flex:1;
+     
+  }
+  .item2 {
+      -webkit-flex:2;
+      flex:2;
+  }
+  .item3 {
+      -webkit-flex:3;
+      flex:3;
+  }
+  .item4 {
+      -webkit-flex:4;
+      flex: 4;
+  }
+  .item8{
+    -webkit-flex:8;
+      flex: 8;
+  }
+  .item9{
+    -webkit-flex:9;
+      flex: 9;
+  }
+  .mb10{
+    margin-bottom: 15px;
+  }
+
+  
+  .pubcolor{
+    // font-family:'Microsoft YaHei';
+    //font-weight: 400;
+    color:#00FFFF;
+   
+  }
+  .fyellow{
+    color: #F6FF00 ;
+   
+  }
+  .fgreen{
+    color: #32FE62 
+  }
+  .fpink{
+    color: #FF7FA6
+  }
+  .font-Italic{
+    font-family:'DS-Digital';   
+    // font-weight: normal;
+       font-size:20px;
+    i{
+        font-family:"YouSheBiaoTiHei";  
+        font-size:14px;
+    }
+  }
+
+  .box-top{
+      .pubcolor{
+        position: relative;
+        bottom:-8px;
+      }
+      .font-Italic{
+        position: relative;
+        bottom:-5px;
+      }
+    }
+  .box-bottom{
+      .pubcolor{
+        position: relative;
+        bottom:2px;
+      }
+      .font-Italic{
+        position: relative;
+        bottom:8px;
+      }
+  }
+  .leftbox{
+    position: relative;
+    left:3px;
+  }
+  .rightbox{
+    position: relative;
+    left:-3px;
+  }
+  
+}
+
+@media (min-width: 3840px) {
+  .f-page{
+
+    font-size: 30px;
+
+    .font-Italic{
+      font-size: 48px;
+      >i{
+        font-size: 30px; 
+      }
+    }
+    
+    .maphead{
+        font-size:48px !important; 
+        .line{
+          bottom:-38px !important;
+        }
+    }
+    .top-title{
+    
+        > span{
+          height: 70px;
+          line-height:70px;
+          padding-top:20px;
+          font-size: 42px;
+          padding-left:15%;
+          background-size: 100%;
+        }
+    }
+
+    .pubcolor{
+      color:#00FFFF;
+     
+    }
+    .fyellow{
+     
+      font-size: 60px;
+    }
+    .fgreen{
+      font-size: 48px;
+    }
+    .fpink{
+      font-size: 48px;
+    }
+
+    .box-top{
+      .pubcolor{
+        position: relative;
+        bottom:-35px;
+      }
+      .font-Italic{
+        position: relative;
+        bottom:-20px;
+      }
+    }
+    .box-bottom{
+        .pubcolor{
+          position: relative;
+          bottom:-5px;
+        }
+        .font-Italic{
+          position: relative;
+          bottom:8px;
+        }
+    }
+   
+    
+  }
+ 
+}
+
+@media (min-width: 7680px) {
+
+  .f-page{
+    .rightbox {
+      left: -40px;
+    }
+    .leftbox{
+      left: 40px;
+    }
+    .h-middle,.leftbox,.rightbox{
+      position: relative;
+      top:35px;
+    }
+    .box-bottom{
+      .pubcolor{
+        bottom:-20px;
+      }
+      .font-Italic{
+        bottom:-3px;
+      }
+    }
+    .top-title{
+      position: relative;
+      top: 55px;
+    }
+  } 
+  
+}
